@@ -1,0 +1,7 @@
+The `-u` flag in the `git push` command is short for `--set-upstream`. When you use this flag, you're telling Git to set up a tracking relationship between the local branch and the remote branch.
+
+For example, after creating a new branch locally and using `git push -u origin <new-branch-name>`, Git sets up a tracking relationship between your local branch (`<new-branch-name>`) and the remote branch (`<new-branch-name>`) on the `origin` remote. This means that in the future, when you are on your local branch and you run `git push` or `git pull`, Git knows which remote branch to push to or pull from.
+
+After setting the upstream branch with `-u` once, you can simply use `git push` and `git pull` without specifying the remote branch each time, as Git remembers the association.
+
+So, in summary, using `-u` is a convenient way to establish a tracking relationship between the local and remote branches, making it easier to push and pull changes in the future without specifying the remote and branch name each time.
